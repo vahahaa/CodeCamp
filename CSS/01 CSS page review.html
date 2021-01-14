@@ -3,9 +3,11 @@
 <body>
 
 <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 table, th, td {
   border: 1px solid black;
-  font-family: Courier New;
 }
 table {
   border-collapse: collapse;
@@ -17,6 +19,14 @@ th {
 }
 td {
   vertical-align: top;
+}
+div {
+  background-color: linen;
+  width: 500px;
+  border: solid 1px grey;
+}
+div > xmp {
+  margin-left: 20px;
 }
 </style>
 
@@ -31,7 +41,7 @@ td {
     <td rowspan="2">
       <ol>
         <li>Selector</li>
-        <li>Declaration(Propoty, Value)</li>
+        <li>Declaration(Proporty, Value)</li>
       </ol>
     </td>
     <td>3 แบบ</td>
@@ -64,7 +74,41 @@ td {
       </ol>
     </td>
   </tr>
-</table>
+</table><br>
+
+<h3>For example CSS syntax</h3>
+<p><b>Selector:</b><br>
+  - Element Selector เช่น h1, h2, ..., h6, p<br>
+  - Id Selector ใช้สำหรับเลือก element แบบเจาะจง เช่น #para1, #head1<br>
+  - Class Selector ใช้สำหรับเลือก element ที่ถูกกำหนดอยู่ใน class ต่างๆ เช่น .intro, .info<br>
+  - Universal Selector ใช้สำหรับเลือก HTML element ทั้งหมดใน page</p>
+
+<p><b>Property:</b> เป็นคุณสมบัติหรือลักษณะของ element เช่น color, background-color, background-image, border </p>
+
+<p><b>Value:</b> เป็นค่าของคุณสมบัติหรือลักษณะของ element เช่น blue, black, url, 20px </p><br>
+
+<h3>For example CSS writing</h3>
+<p><b>Inline:</b><br>
+  <div><xmp><p style="color:red;">example paragraph 1</p></xmp></div>
+
+<p><b>Internal:</b><br>
+  <div><xmp><style>
+    p {
+      color: red;
+    }
+</style>
+<p>example paragraph 2</p></xmp></div>
+
+<p><b>External:</b><br>
+  <div><xmp><link rel="stylesheet" href="redtext.css">
+<p>example paragraph 3</p></xmp></div><br>
+
+<h3>Selector example case</h3><br>
+
+
+<h3>Combinator example</h3><br>
+
+
 
 </body>
 </html>
