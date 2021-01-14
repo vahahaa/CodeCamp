@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+table, .title, .info {
+  font-family: Helvetica;
+  font-size: 14px;
+  text-align: left;
+}
+.title {
+  column-width: 150px;
+}
+.info {
+  column-width: 100%;
+}
+</style>
+
+<table>
+  <form action="/action_page.php">
+  <tr>
+    <td class="title"><label for="fname">Name<font color="red">*</font>:</label></td>
+    <td class="info"><input type="text" id="fname" name="fname" required></td>
+  </tr>
+
+  <tr>
+    <td class="title"><label for="taptext">Tap Text<font color="red">*</font>:</label></td>
+    <td class="info"><input type="text" id="taptext" name="taptext" required></td>
+  </tr>
+
+  <tr>
+    <td class="title"><label for="url">URL<font color="red">*</font>:</label></td>
+    <td class="info">https://www.wixhive.com/webform/<input type="text" id="url" name="url" required></td>
+  </tr>
+  </form>
+</table>
+<br>
+
+<style>
+div {
+  background-color: lightgrey;
+  width: 800px;
+  color:rgb(90, 90, 90);
+  font-family: Helvetica;
+  font-size: 14px;
+  padding: 6px;
+}
+</style>
+
+<div><b>FORM SETUP</b></div><br>
+
+<table>
+  <form action="/action_page.php">
+  <tr>
+    <td class="title"><label for="form">Form:</label></td>
+    <td class="info"><select name="form" id="form">
+      <option value="form1">Form1</option>
+      <option value="form2">Form2</option>
+      <option value="form3">Form3</option>
+      <option value="form4">Form4</option>
+  </select> <input type="submit" value="Edit"></td>
+  </tr>
+
+  <tr>
+    <td class="title"><label for="logo">Logo:</label></td>
+    <td class="info"><input type="file" id="logo" name="logo"><input type="Submit" value="Upload Logo"></td> 
+  </tr>
+
+  <tr>
+    <td class="title"><label for="templatetext">Template Text:</label></td>
+    <td class="info"><select name="templatetext" id="templatetext">
+        <option value="english">English</option>
+        <option value="thai">Thai</option>
+    </select> <input type="submit" value="Edit"></td>
+  </tr>
+
+  <tr>
+    <td class="title"><label for="reviewform">Review Form:</label></td>
+    <td class="info"><select name="reviewform" id="reviewform">
+        <option value="default">Default</option>
+        <option value="special">Special</option>
+    </select></td>    
+  </tr>
+
+  <tr>
+    <td class="title"><label for="reviewscore">Review Score:</label></td>
+    <td class="info"><select name="reviewscore" id="reviewscore">
+        <option value="rating">Reating</option>
+        <option value="review">Review</option>
+    </select> <input type="submit" value="Reload Fields"></td>
+  </tr>  
+
+  <tr>
+    <td class="title"><label for="scoringtype">Scoring Type:</label></td>
+    <td class="info"><select name="scoringtype" id="scoringtype">
+        <option value="average">Average</option>
+        <option value="min">Min</option>
+        <option value="max">Max</option>
+    </select></td>     
+  </tr>
+
+  <tr>
+    <td class="title"><label for="maxscore">Max Score:</label></td>
+    <td class="info"><input type="number" id="maxscore" name="maxscore" min="0" max="4" step="0.5"</td>    
+  </tr>
+
+  </form>
+</table>
+
+</body>
+</html>
