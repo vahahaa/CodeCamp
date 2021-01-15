@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<style> 
+body {
+  font-family: Arial;
+}
+div#a {
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+  position: relative;
+  /*animation-name: example;
+  animation-duration: 6s;
+  animation-delay: 1s
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-funstion: ease;*/
+  animation: animation-a alternate ease 9s 2s infinite;
+}
+
+div#b {
+  border-radius: 30%;
+  width: 50px;
+  height: 50px;
+  background-color: lightgray;
+  position: relative;
+  animation: animation-b reverse ease-in 6s 0.5s infinite;
+}
+
+div#c {
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  background-color: lightseagreen;
+  position: relative;
+  animation: animation-c alternate ease 3s 1s infinite;
+}
+
+@keyframes animation-a {
+  0%    {background-color: lightcoral; left:0px; top:0px;}
+  25%   {background-color: lightseagreen; left:120px; top:0px;}
+  50%   {background-color: lightskyblue; left:120px; top:120px;}
+  75%   {background-color: lightsalmon; left:0px; top:120px;}
+  100%  {background-color: lightslategray; left:0px; top:0px;}
+}
+
+@keyframes animation-b {
+  0%    {background-color: lightgrey; left:0px; top:0px;}
+  25%   {background-color: lightyellow; left:120px; top:0px;}
+  50%   {background-color: lightsalmon; left:120px; top:120px;}
+  75%   {background-color: lightcoral; left:0px; top:120px;}
+  100%  {background-color: lightpink; left:0px; top:0px;}
+}
+
+@keyframes animation-c {
+  0%    {background-color: lightseagreen; left:0px; top:0px;}
+  25%   {background-color: lightyellow; left:120px; top:0px;}
+  50%   {background-color: lightcoral; left:120px; top:120px;}
+  75%   {background-color: lightgrey; left:0px; top:120px;}
+  100%  {background-color: lightskyblue; left:0px; top:0px;}
+}
+
+</style>       
+</head>
+
+<body>
+<h2>CSS animation</h2><br>
+<div id="a"></div>
+<div id="b"></div>
+<div id="c"></div>
+</body>
+
+</html>
