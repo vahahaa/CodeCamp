@@ -5,6 +5,7 @@
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 table, th, td {
   border: 1px solid black;
@@ -13,29 +14,33 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
-th {
+th.a {
   height: 30px;
-  font-size: 20px;
+  font-size: 16px;
 }
 td {
   vertical-align: top;
 }
 div {
   background-color: linen;
-  width: 500px;
+  width: 600px;
   border: solid 1px grey;
 }
 div > xmp {
   margin-left: 20px;
 }
+th.c {
+  height: 20px;
+  font-size: 14px;
+}
 </style>
 
 <table>
   <tr>
-    <th>CSS syntax ประกอบด้วยอะไรบ้าง</th>
-    <th>การเขียน CSS มีกี่แบบ อะไรบ้าง</th>
-    <th>Selector มีกี่แบบ อะไรบ้าง</th>
-    <th>Combinator มีกี่แบบ อะไรบ้าง</th>
+    <th class="a">CSS syntax ประกอบด้วยอะไรบ้าง</th>
+    <th class="a">การเขียน CSS มีกี่แบบ อะไรบ้าง</th>
+    <th class="a">Selector มีกี่แบบ อะไรบ้าง</th>
+    <th class="a">Combinator มีกี่แบบ อะไรบ้าง</th>
   </tr>
   <tr>
     <td rowspan="2">
@@ -103,12 +108,75 @@ div > xmp {
   <div><xmp><link rel="stylesheet" href="redtext.css">
 <p>example paragraph 3</p></xmp></div><br>
 
-<h3>Selector example case</h3><br>
+<h3>Selector example case</h3>
 
+<table>
+  <tr>
+    <th class="c">Selector</th>
+    <th class="c">Example</th>
+    <th class="c">Description</th>
+  </tr>
+  <tr>
+    <td>#id</td>
+    <td>#firstname</td>
+    <td>Select the element with id="firstname"</td>
+  </tr>
+  <tr>
+    <td>.class</td>
+    <td>.intro</td>
+    <td>Select all elements with class="intro"</td>
+  </tr>
+  <tr>
+    <td>element.class</td>
+    <td>p.intro</td>
+    <td>Select only p elements with class="intro"</td>
+  </tr>
+  <tr>
+    <td>*</td>
+    <td>*</td>
+    <td>Select all elements</td>
+  </tr>
+  <tr>
+    <td>element</td>
+    <td>p</td>
+    <td>Select all p elements</td>
+  </tr>
+  <tr>
+    <td>element, element,..</td>
+    <td>div, p</td>
+    <td>Select all div elements and all p elements</td>
+  </tr>
 
-<h3>Combinator example</h3><br>
+<h3>Combinator example</h3>
 
-
+<table>
+  <tr>
+    <th class="c">Combinator Selector</th>
+    <th class="c">Example</th>
+    <th class="c">Description</th>
+  </tr>
+  <tr>
+    <td>element element</td>
+    <td>div p</td>
+    <td>Select all p element inside div element</td>
+  </tr>
+  <tr>
+    <td>element > element</td>
+    <td>div > p</td>
+    <td>Select all p element where the parents is a div element</td>
+  </tr>
+  <tr>
+    <td>element + element</td>
+    <td>div + p</td>
+    <td>Select the first p element that are placed immediately after div element</td>
+  </tr>
+  <tr>
+    <td>element1 ~ element2</td>
+    <td>p ~ ul</td>
+    <td>Select every ul element that are proceeded by a p element</td>
+  </tr>
+</table>
+<br>
 
 </body>
 </html>
