@@ -12,6 +12,7 @@ table, th, td {
 }
 table {
   border-collapse: collapse;
+  table-layout: auto;
   width: 100%;
 }
 th.a {
@@ -109,7 +110,6 @@ th.c {
 <p>example paragraph 3</p></xmp></div><br>
 
 <h3>Selector example case</h3>
-
 <table>
   <tr>
     <th class="c">Selector</th>
@@ -146,9 +146,9 @@ th.c {
     <td>div, p</td>
     <td>Select all div elements and all p elements</td>
   </tr>
+</table><br>
 
 <h3>Combinator example</h3>
-
 <table>
   <tr>
     <th class="c">Combinator Selector</th>
@@ -175,8 +175,7 @@ th.c {
     <td>p ~ ul</td>
     <td>Select every ul element that are proceeded by a p element</td>
   </tr>
-</table>
-<br>
+</table><br>
 
 </body>
 </html>
